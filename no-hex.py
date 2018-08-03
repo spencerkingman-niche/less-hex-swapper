@@ -17,9 +17,9 @@ def findAndReplace(string, dictionary):
 colorsFile = open(COLORS_PATH, 'r')
 colors = colorsFile.read()
 colorsRegex = '(@.*?):\s*(#.*?);'
-colorsArray = re.findall(colorsRegex, colors)
+colorsList = re.findall(colorsRegex, colors)
 colorsDict = {}
-for color in colorsArray:
+for color in colorsList:
     colorsDict[color[1]]=color[0]
 
 # Read the file you want to edit into memory
