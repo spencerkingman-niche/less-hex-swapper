@@ -4,4 +4,6 @@ This is for those times when you copy the mockup CSS right out of the browser an
 
 Alter the paths appropriately at the top of `no-hex.py` and then launch the python script. It will overwrite the file, swapping out all of the hex for `.less` variables.
 
+`_broccoli copy.less` is here to make restoring the unswapped values easier (since they do get overwritten) during development.
+
 I wrote this in Python3. I don't know if it will work in Python2. The simplest way to run a Python script is download `IDLE Python3`.
